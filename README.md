@@ -15,7 +15,7 @@
 ---
 
 ## 🚀 Live Demo  
-👉 [https://your-vercel-link.vercel.app  ](https://dcu-tennis-website.vercel.app/)
+👉 [https://dcu-tennis-website.vercel.app/](https://dcu-tennis-website.vercel.app/)
 
 ---
 
