@@ -1,5 +1,6 @@
 import useReveal from "../hooks/useReveal";
-import announcements from "../data/announcements";
+import { useEffect, useState } from "react";
+import { client } from "../lib/sanity";
 
 const badgeColors = {
   urgent: { bg: "#fef2f2", color: "#dc2626" },
@@ -51,6 +52,13 @@ function AnnouncementCard({ item }) {
 function Announcements() {
   const ref = useReveal();
 
+  const [announcements, setAnnouncements] = useState([]);
+  useEffect(() => {
+  client
+    .fetch(`*[_type == "announcement"]`)
+    .then((data) => setAnnouncements(data))
+    .catch(console.error);
+}, []);
   return (
     <section id="announcements" style={{ padding: "80px 28px", background: "var(--white)" }}>
       <div style={{ maxWidth: 760, margin: "0 auto" }}>
