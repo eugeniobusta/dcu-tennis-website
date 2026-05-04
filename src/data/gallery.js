@@ -7,19 +7,19 @@ import teamImg from "../assets/team.jpg";
 const galleryImages = [
   {
     src: holdingRackets,
-    alt: "Tennis court aerial",
+    alt: "Team holding rackets",
   },
   {
     src: holdingTrophies,
-    alt: "Tennis racket close-up",
+    alt: "Team holding trophy",
   },
   {
     src: trophies,
-    alt: "Tennis player serving",
+    alt: "Team holding trophy",
   },
   {
     src: withRackets,
-    alt: "Tennis ball on court",
+    alt: "Team holding rackets",
   },
   {
     src: teamImg,
