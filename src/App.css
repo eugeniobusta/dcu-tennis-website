@@ -1,0 +1,18 @@
+/*
+  App.css
+  ---------------------------------------------------------------------------
+  Component-level style overrides and layout adjustments specific to App.jsx.
+  Global design tokens, resets, and shared utilities live in styles/global.css.
+  ---------------------------------------------------------------------------
+*/
+
+/* Ensure the page stretches full height */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}

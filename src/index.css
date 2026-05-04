@@ -1,0 +1,29 @@
+/*
+  index.css
+  ---------------------------------------------------------------------------
+  Minimal browser-level reset injected before React mounts.
+  Anything design-related belongs in styles/global.css instead.
+  ---------------------------------------------------------------------------
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+}
