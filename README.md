@@ -39,18 +39,6 @@
 
 ---
 
-## ⚙️ Run Locally  
-
-bash git clone https://github.com/your-username/dcu-tennis-website.git cd dcu-tennis-website npm install npm run dev 
-
----
-
-## 📦 Build  
-
-bash npm run build 
-
----
-
 ## 🌐 Deployment  
 
 Deployed with Vercel for fast and reliable hosting.
@@ -82,10 +70,10 @@ It focuses on clean UI, performance, and usability, especially for students who 
 
 ## 👤 Author  
 
-Eugenio Busta  
+Eugenio Bustamante 
 
 ---
 
 <p align="center">
-  Built with 💻 and a lot of debugging
+  Built with 💻 & 🎾 and a lot of debugging
 </p
