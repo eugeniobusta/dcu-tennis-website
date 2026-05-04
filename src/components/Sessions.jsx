@@ -1,5 +1,13 @@
+import { useEffect, useState } from "react";
+import { client } from "../lib/sanity";
 import useReveal from "../hooks/useReveal";
-import sessions from "../data/sessions";
+
+const sessionIcons = {
+  tournament: "🏆",
+  match: "🎾",
+  regular: "☀️",
+  social: "🤝",
+};
 
 function SessionCard({ session }) {
   return (
@@ -10,7 +18,7 @@ function SessionCard({ session }) {
           width: 52,
           height: 52,
           borderRadius: 14,
-          background: session.color,
+          background: session.color || "#d6ead9",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -18,7 +26,7 @@ function SessionCard({ session }) {
           marginBottom: 18,
         }}
       >
-        {session.icon}
+        {sessionIcons[session.type] || "🎾"}
       </div>
 
       {/* Type label */}
@@ -77,6 +85,14 @@ function SessionCard({ session }) {
 
 function Sessions() {
   const ref = useReveal();
+
+  const [sessions, setSessions] = useState([]);
+  useEffect(() => {
+  client
+    .fetch(`*[_type == "session"]`)
+    .then((data) => setSessions(data))
+    .catch((err) => console.error(err));
+}, []);
 
   return (
     <section id="sessions" style={{ padding: "80px 28px", background: "var(--grey-100)" }}>
