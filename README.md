@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="[https://dcu-tennis-website.vercel.app/](https://dcu-tennis-website.vercel.app/)">
+  <a href="https://dcu-tennis-website.vercel.app/">
     <img src="https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge" />
   </a>
   <img src="https://img.shields.io/badge/Built%20with-React-blue?style=for-the-badge" />
